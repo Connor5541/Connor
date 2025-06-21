@@ -1,0 +1,133 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #0078d4;
+}
+
+.section {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.profile-img {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+button {
+  background: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.project-card {
+  background: #f4f8fb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+form input, form textarea, form button {
+  display: block;
+  margin: 10px auto;
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #fff;
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #181a1b;
+  color: #f1f1f1;
+}
+
+body.dark-mode .section,
+body.dark-mode header,
+body.dark-mode footer {
+  background: #23272a;
+  color: #f1f1f1;
+}
+
+body.dark-mode .project-card {
+  background: #2c3136;
+}
+
+body.dark-mode nav a {
+  color: #f1f1f1;
+}
+
+body.dark-mode nav a:hover {
+  color: #4fc3f7;
+}
+
+body.dark-mode button {
+  background: #4fc3f7;
+  color: #23272a;
+}
+
+body.dark-mode button:hover {
+  background: #0288d1;
+  color: #fff;
+}
